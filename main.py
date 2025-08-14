@@ -1280,7 +1280,7 @@ async def handle_reactions(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if user.id in cvoters:
             try:
                 await query.answer(
-                    f"سجّلنا تفاعلك لهذه الحملة مسبقًا. شكرًا {user.first_name} 💙",
+                    f"سجّلنا تفاعلك على هذا المنشور مسبقًا. شكرًا {user.first_name} 💙",
                     show_alert=True
                 )
             except BadRequest:
@@ -1291,7 +1291,7 @@ async def handle_reactions(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if user.id in voters:
         try:
             await query.answer(
-                f"عزيزي {user.first_name}، لقد سجّلنا تفاعلك سابقًا. شكرًا لك 💙",
+                f"عزيزي {user.first_name}، لقد سجّلنا تفاعلك على عذا المنشور سابقًا. شكرًا لك 💙",
                 show_alert=True
             )
         except BadRequest:
